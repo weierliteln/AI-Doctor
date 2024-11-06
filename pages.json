@@ -1,17 +1,81 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
+			"path" : "pages/home/home",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/consult/consult",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/community/community",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/my/my",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/ai/ai",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "AI问诊",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	"tabBar": {
+		"selectedColor": "#007aff",
+		"list":[
+		{
+			"pagePath":"pages/home/home",
+			"text":"首页",
+			"iconPath":"/static/logo.png",
+			"selectedIconPath":""
+		},
+		{
+			"pagePath":"pages/consult/consult",
+			"text":"咨询",
+			"iconPath":"",
+			"selectedIconPath":""
+		},
+		{
+			"pagePath":"pages/ai/ai",
+			"text":"AI",
+			"iconPath":"",
+			"selectedIconPath":""
+		},
+		{
+			"pagePath":"pages/community/community",
+			"text":"社区",
+			"iconPath":"",
+			"selectedIconPath":""
+		},
+		{
+			"pagePath":"pages/my/my",
+			"text":"我的",
+			"iconPath":"",
+			"selectedIconPath":""
+		}
+	]
+	}
 }
